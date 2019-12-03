@@ -1,0 +1,196 @@
+html{
+	background-color: #E5DFCB;
+}
+#body{
+	background-color:
+}
+
+#content{
+	position: relative;
+	animation-name:start;
+	animation-duration: 2.5s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:1;
+}
+.title {
+	font-family: "Futura";
+	margin:30px 0px 0px 600px;
+	font-size: 15px;
+	color: black;
+	position: absolute;
+	text-decoration: none;
+}
+
+.name {
+	font-family: "Futura";
+	margin:150px 0px 0px 400px;
+	font-size: 80px;
+	position:absolute;
+	text-align: left;
+}
+
+.dot {
+  height: 150px;
+  width: 150px;
+  background-color: #ffffff;
+  border-radius: 50%;
+	position: absolute;
+	margin: 100px 0px 0px 300px;
+}
+
+.info{
+	font-family: "Futura";
+	margin:250px 0px 0px 380px;
+	font-size: 15px;
+	position:absolute;
+	text-align: left;
+}
+
+
+p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#drawing img{
+	width: 600px;
+	margin:150px 0px 0px 700px;
+	position: absolute;
+	animation-name:fadein;
+	animation-duration: 15s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:infinite;
+}
+
+#picture img{
+	width: 300px;
+	margin:230px 0px 0px 840px;
+	position: absolute;
+	animation-name:fadein2;
+	animation-duration: 15s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:infinite;
+	}
+
+#picture2 img{
+	width: 300px;
+	margin:230px 0px 0px 840px;
+	position: absolute;
+	animation-name:fadein3;
+	animation-duration: 15s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:infinite;
+}
+
+.loader.two {
+	display: flex;
+	flex-direction:row;
+	align-items: center;
+	justify-content: space-between;
+	width: 90px;
+}
+
+.loader.two .dot {
+	height: 30px;
+	width: 30px;
+	background: #000;
+	border-radius: 15px;
+	background: #F76A4D;
+	/* TODO: PART 2 - Add wave animation */
+}
+.loader.two .first.dot {
+	height: 20px;
+	width: 20px;
+	background: #000;
+	border-radius: 15px;
+	background: #ffffff;
+	/* TODO: PART 2 - Add wave animation */
+	animation-name:upDown;
+	animation-duration: 2s;
+	animation-delay: 0;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+
+}
+
+/* TODO: PART 2 - Add delays and dot colors */
+.loader.two .second.dot {
+	height: 20px;
+	width: 20px;
+	background: #000;
+	border-radius: 15px;
+	background: #ffffff;
+	/* TODO: PART 2 - Add wave animation */
+	animation-name:upDown;
+	animation-duration: 2s;
+	animation-delay: .25s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+}
+
+.loader.two .third.dot {
+	height: 20px;
+	width: 20px;
+	background: #000;
+	border-radius: 15px;
+	background: #ffffff;
+	/* TODO: PART 2 - Add wave animation */
+	animation-name:upDown;
+	animation-duration: 2s;
+	animation-delay: .5s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+
+}
+
+.loader.two{
+	position: absolute;
+	margin: -90px 0px 0px -305px;
+	}
+
+@keyframes fadein{
+	0% {opacity: 1;}
+	20% {opacity: 1;}
+	25% {opacity: 0;}
+	75% {opacity: 0;}
+	90% {opacity: 0;}
+	95% {opacity: 1;}
+	100% {opacity: 1;}
+}
+
+@keyframes fadein2{
+	0% {opacity: 0;}
+	20% {opacity: 0;}
+	25% {opacity: 1;}
+	55% {opacity:1;}
+	60% {opacity:0;}
+  100% {opacity: 0;}
+}
+
+@keyframes fadein3{
+	0% {opacity: 0;}
+	55% {opacity:0;}
+	60% {opacity:1;}
+	90% {opacity:1;}
+	95% {opacity:0;}
+  100% {opacity: 0;}
+}
+
+@keyframes upDown{
+  0% {transform: initial;}
+  30% {transform: translateX(100px);}
+	60% {transform: initial;}
+  100% {transform: initial;}
+}
+
+@keyframes start{
+	from { opacity: 0; }
+    to   { opacity: 1; }
+}

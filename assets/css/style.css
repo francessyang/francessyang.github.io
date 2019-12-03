@@ -1,0 +1,231 @@
+html{
+	background-color: #E5DFCB;
+}
+#body{
+	background-color:
+}
+#nav {
+	font-family: "Futura";
+	margin:80px 0px 0px 50px;
+	font-size: 30px;
+	position:relative;
+}
+
+.about {
+	font-family: "Futura";
+	position: absolute;
+	margin:0px 0px 0px 90px;
+	font-size: 15px;
+	color: black;
+	text-decoration:none;
+	z-index: 10;
+}
+
+#about:hover{
+	text-decoration: underline;
+}
+
+.loader.two {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 90px;
+}
+
+.loader.two .dot {
+	height: 30px;
+	width: 30px;
+	background: #000;
+	border-radius: 15px;
+	background: #F76A4D;
+	/* TODO: PART 2 - Add wave animation */
+}
+.loader.two .first.dot {
+	height: 20px;
+	width: 20px;
+	background: #000;
+	border-radius: 15px;
+	background: #ffffff;
+	/* TODO: PART 2 - Add wave animation */
+	animation-name:upDown;
+	animation-duration: 2s;
+	animation-delay: 0;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+
+}
+
+/* TODO: PART 2 - Add delays and dot colors */
+.loader.two .second.dot {
+	height: 20px;
+	width: 20px;
+	background: #000;
+	border-radius: 15px;
+	background: #ffffff;
+	/* TODO: PART 2 - Add wave animation */
+	animation-name:upDown;
+	animation-duration: 2s;
+	animation-delay: .25s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+}
+
+.loader.two .third.dot {
+	height: 20px;
+	width: 20px;
+	background: #000;
+	border-radius: 15px;
+	background: #ffffff;
+	/* TODO: PART 2 - Add wave animation */
+	animation-name:upDown;
+	animation-duration: 2s;
+	animation-delay: .5s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+
+}
+
+.loader.two{
+	position: absolute;
+	margin: 450px 0px 0px 1235px;
+	animation-name:fadein;
+	animation-duration: 2.5s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:1;}
+
+
+#map img{
+	width: 1100px;
+	position:relative;
+	margin-left: 100px;
+	margin-top: -150px;
+	animation-name:fadein;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:1;}
+
+#marker img{
+	width: 60px;
+	margin-left: 420px;
+	margin-top: -150px;
+	position:absolute;
+	animation-name:fadein;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:1;}
+
+#marker img:hover{
+	width: 70px;
+	margin-lefDiort: 410px;
+	margin-top: -160px;
+}
+
+#marker4 img{
+	width: 60px;
+	margin-left: 820px;
+	margin-top: -550px;
+	position:absolute;
+	animation-name:fadein;
+	animation-duration: 1.5s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:1;}
+
+#marker4 img:hover{
+	width: 70px;
+	margin-left: 810px;
+	margin-top: -560px;
+	position:absolute;
+}
+
+#marker6 img{
+	width: 60px;
+	margin-left: 1000px;
+	margin-top: -410px;
+	position:absolute;
+	animation-name:fadein;
+	animation-duration: 2s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:1;}
+
+#marker6 img:hover{
+	width: 70px;
+	margin-left: 990px;
+	margin-top: -420px;
+	position:absolute;
+}
+
+#marker8 img{
+	width: 60px;
+	margin-left: 620px;
+	margin-top: -260px;
+	position:absolute;
+	animation-name:fadein;
+	animation-duration:2.5s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:1;}
+
+#marker8 img:hover{
+	width: 70px;
+	margin-left: 610px;
+	margin-top: -270px;
+	position:absolute;
+}
+
+#marker9 img{
+	width: 60px;
+	margin-left: 660px;
+	margin-top: -280px;
+	position:absolute;
+	animation-name:fadein;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:1;}
+
+#marker9 img:hover{
+	width: 70px;
+	margin-left: 650px;
+	margin-top: -290px;
+	position:absolute;
+}
+
+#text1 {
+	font-family: "Futura";
+	position: absolute;
+	left: 1160px;
+	bottom: 80px;
+	animation-name:fadein;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:1;}
+
+#text2 {
+	font-family: "Futura";
+	position: absolute;
+	left: 1160px;
+	bottom: 60px;
+	animation-name:fadein;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-timing-function: ease-in;
+	animation-iteration-count:1;}
+
+@keyframes fadein{
+	from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes upDown{
+  0% {transform: initial;}
+  30% {transform: translateY(-50px);}
+	60% {transform: initial;}
+  100% {transform: initial;}
+}
